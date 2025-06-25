@@ -9,6 +9,15 @@ namespace Exercicio4
     class Competicao
     {
         public string Nome { get; set; }
-        List<Competidor> Competidores { get; set; }
+        public List<Competidor> ListaDeCompetidores { get; set; }
+
+        public void AdicionarCompetidor(Competidor competidor)
+        {
+            if (competidor == null)
+            {
+                throw new ArgumentNullException(nameof(competidor), "O competidor não pode ser nulo.");
+            }
+            ListaDeCompetidores.Add(competidor);
+        }
     }
 }

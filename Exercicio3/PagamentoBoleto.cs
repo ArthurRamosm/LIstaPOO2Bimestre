@@ -10,7 +10,7 @@ namespace Exercicio3
     {
         public void ProcessarPagamento(decimal valor)
         {
-            Console.WriteLine("Pagamento de R$[valor] processado via boleto bancário.");
+            Console.WriteLine($"Pagamento de R${valor} processado via boleto bancário.");
         }
     }
     

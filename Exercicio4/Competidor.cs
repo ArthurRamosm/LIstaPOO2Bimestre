@@ -9,8 +9,13 @@ namespace Exercicio4
     class Competidor
     {
         public string Nome { get; set; }
-        public string Modalidade { get; set; }
         public int Idade { get; set; }
+        public string Modalidade { get; set; }
+
+        public override string ToString()
+        {
+            return $"Nome: {Nome}, Idade: {Idade}, Modalidade: {Modalidade}";
+        }
 
     }
 }

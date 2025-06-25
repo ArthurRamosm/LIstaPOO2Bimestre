@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Exercicio3
 {
-    class LojaVirtual
+    class PagamentoPix : Ipagamentos
     {
-        public void RealizarPagamento(Ipagamentos metodo, decimal valor)
+        public void ProcessarPagamento(decimal valor)
         {
-            metodo.ProcessarPagamento(valor);
+            Console.WriteLine($"Pagamento de R${valor} processado via Pix.");
         }
     }
 }
